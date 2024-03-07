@@ -3,17 +3,13 @@
  */
 
 import javax.swing.*; 
-
-// import java.util.Enumeration;
-// import java.util.Hashtable;
 import java.util.ArrayList;
 import java.util.Random;
-
 
 public class Main {
 	private static JFrame f = new JFrame();//creating instance of JFrame 
 	private static JButton buttonShowResponse = new JButton("Show response");//creating instance of JButton  
-	private static JTextField tf = new JTextField();
+	// private static JTextField tf = new JTextField();
 	private static JLabel labelQuestion = new JLabel();
 	private static JLabel labelResponse = new JLabel();
 
@@ -53,33 +49,12 @@ public class Main {
 			labelResponse.setText(respuestas.get(Main.getRandomIndex()));
 		});
 
-		// tf.setBounds(50, 50, 150, 20);
-		// tf.setText(preguntas.get(0));
-		// f.add(tf);
+		
 		f.add(labelQuestion);
 		f.add(labelResponse);
 		f.add(buttonShowResponse);
 		f.setSize(400,500);//400 width and 500 height  
 		f.setLayout(null);//using no layout managers  
 		f.setVisible(true);//making the frame visible 
-
-		// Adding elements to the hashtable
-		// hashtable.put("", "uno");
-		// hashtable.put("B", "dos");
-		// hashtable.put("C", "tres");
-
-		// // Getting values from the hashtable
-		// String valueA = hashtable.get("A");
-		// System.out.println("Value of A: " + valueA);
-
-		// // Removing elements from the hashtable
-		// hashtable.remove("B");
-
-		// // Enumerating the elements of the hashtable
-		// Enumeration<String> keys = hashtable.keys();
-		// while (keys.hasMoreElements()) {
-		// 	String key = keys.nextElement();
-		// 	System.out.println("Key: " + key + ", Value: " + hashtable.get(key));
-		// }
 	}
 }
